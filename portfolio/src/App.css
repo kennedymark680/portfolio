@@ -74,7 +74,7 @@
   width: 100%;
   background-color: #112240;
   border-left: 4px solid white;
-  /* animation: typing 15s steps(34) infinite */
+  animation: typing 15s steps(34) infinite
 }
 
 @keyframes typing {
@@ -96,12 +96,12 @@
   
 }
 
-.about {
+.section-container {
   width: 70%;
   height: 70vh;
 }
 
-.about-title {
+.title {
   font-size: 2.5em;
   border-bottom: solid .5px #d2d2d0;
 }
@@ -139,6 +139,42 @@
   gap: 10px;
 }
 
-.skills-list li span{
+.skills-list li span,
+.project li span {
   color: #b9992c;
+}
+
+.tech-list {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  list-style: none;
+  display: flex;
+  margin: 10px;
+  align-self: center;
+  justify-self: center;
+}
+
+.tech-list li {
+  width: 150px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 3fr 1fr;
+  margin: 30px;
+}
+
+.project-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.video {
+  height: 300px;
+  width: auto;
+  border-radius: 5px;
 }

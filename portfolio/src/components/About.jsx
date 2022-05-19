@@ -3,8 +3,8 @@ import Skills from './Skills'
 
 const About = () => {
   return (
-    <div className="about">
-      <div className="about-title">About</div>
+    <div className="section-container">
+      <div className="title">About</div>
       <div className="about-info">
         <div className="about-info-text">
           <p>I am a software developer.I am a software developer.I am a software developer.I am a software developer.I am a software developer.I am a software developer.I am a software developer.I am a software developer.</p>
