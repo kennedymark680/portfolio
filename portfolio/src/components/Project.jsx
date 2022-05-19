@@ -9,16 +9,12 @@ const Project = ({project}) => {
         <p>{project.description}</p>
         <a href={project.links[0]} target="_blank">Webpage</a>
         <a href={project.links[1]} target="_blank">FrontEnd</a>
-        <a href={project.links[2]} target="_blank">BackEnd</a>
+        {project.links[2] ? <a href={project.links[2]} target="_blank">BackEnd</a> : null}
       </div>
       <ul className="tech-list">
         {project.tech.map((tech) => (
           <li key={tech}><span>√ </span>{tech}</li>
         ))}
-        {/* <li><span>√ </span>PostgreSQL</li>
-        <li><span>√ </span>PostgreSQL</li>
-        <li><span>√ </span>PostgreSQL</li>
-        <li><span>√ </span>PostgreSQL</li> */}
       </ul>
     </div>
   )

@@ -35,11 +35,10 @@ const Projects = () => {
     description:
       'A responsive, interactive, full CRUD, full stack PERN game played with friends simultaneously.',
     video: PennStar4,
-    tech: ['React', 'PostgreSQL', 'NodeJS', 'ExpressJS'],
+    tech: ['JavaScript', 'CSS', 'HTML', 'Custom Art'],
     links: [
       'https://pennstar4.surge.sh/',
-      'https://github.com/kennedymark680/gonner',
-      'https://github.com/kennedymark680/gonner_backend'
+      'https://github.com/kennedymark680/pennStar4'
     ]
   }
 
@@ -49,15 +48,6 @@ const Projects = () => {
       <Project project={gonner} />
       <Project project={spacePilgrims} />
       <Project project={pennStar4} />
-      {/* <video className='video' autoPlay controls muted loop>
-        <source src={GonnerVideo} type='video/mp4'/>
-      </video>
-      <video className='video' autoPlay controls muted loop>
-        <source src={PennStar4} type='video/mp4'/>
-      </video>
-      <video className='video' autoPlay controls muted loop>
-        <source src={SpacePilgrims} type='video/mp4'/>
-      </video> */}
     </div>
   )
 }
