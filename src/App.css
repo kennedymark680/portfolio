@@ -192,3 +192,28 @@ html {
   justify-content: space-around;
   margin: 50px 0;
 }
+
+.project-buttons button {
+  background-color: #112240;
+  color: white;
+  border: 1px white solid;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+  font-size: 1em;
+}
+
+.project-buttons button:hover {
+  background-color: white;
+  color: #b9992c;
+  animation: zoom .1s linear forwards;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
