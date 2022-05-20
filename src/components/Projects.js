@@ -42,12 +42,27 @@ const Projects = () => {
     ]
   }
 
+  const [gonnerBtn, toggleGonnerBtn] = useState(true)
+  const [spacePilgrimsBtn, toggleSpacePilgrims] = useState(false)
+  const [pennStar4Btn, togglePennStar4Btn] = useState(false)
+
+  const toggleToggle = (project) => {}
+
   return (
     <div className="section-container">
       <div className="title">Projects</div>
-      <Project project={gonner} />
-      <Project project={spacePilgrims} />
-      <Project project={pennStar4} />
+      <div className="project-buttons">
+        <button onClick={() => toggleGonnerBtn(!gonnerBtn)}>Gonner</button>
+        <button onClick={() => toggleSpacePilgrims(!spacePilgrimsBtn)}>
+          Space Pilgrims
+        </button>
+        <button onClick={() => togglePennStar4Btn(!pennStar4Btn)}>
+          PennStar4
+        </button>
+      </div>
+      {gonnerBtn ? <Project project={gonner} /> : null}
+      {spacePilgrimsBtn ? <Project project={spacePilgrims} /> : null}
+      {pennStar4Btn ? <Project project={pennStar4} /> : null}
     </div>
   )
 }
