@@ -53,7 +53,7 @@ const Projects = () => {
   }
 
   return (
-    <div className="section-container">
+    <div className="section-container" id="projects">
       <div className="title">Projects</div>
       <div className="project-buttons">
         <button onClick={() => (toggleFalse(), toggleGonnerBtn(!gonnerBtn))}>

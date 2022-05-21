@@ -11,6 +11,7 @@
 html {
   background-color: #112240;
   color: #edeef0;
+  scroll-behavior: smooth;
 }
 
 .App {
