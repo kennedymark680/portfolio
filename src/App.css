@@ -219,3 +219,32 @@ a {
     transform: scale(1.1);
   }
 }
+
+.side-right {
+  height: 100%;
+  width: 75px;
+  position: fixed;
+  z-index: 0;
+  bottom: 0px;
+  right: 0;
+  background-color: #112240;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.test {
+  transform: rotate(90deg);
+  margin: 70vh 0 0 0;
+}
+
+.test2 {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: white;
+  transform: rotate(90deg);
+}
