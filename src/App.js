@@ -3,14 +3,14 @@ import Nav from './components/Nav'
 import Intro from './components/Intro.jsx'
 import About from './components/About.jsx'
 import Projects from './components/Projects'
+import Left from './components/Left'
+import Right from './components/Right'
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <div orientation="left" className="side-right">
-        <div className="test">kennedymark680@gmail.com</div>
-      </div>
+      <Right />
       <Intro />
       <About />
       <Projects />
