@@ -5,11 +5,12 @@ const Nav = () => {
     <div className="nav">
       <div>
         <ol>
-          <li>About</li>
+          <li><a href='#about'>About</a>
+          </li>
           <li>Experience</li>
           <li>Projects</li>
           <li>Contact</li>
-          <a href={Resume}>Resume</a>
+          <li><a href={Resume} target='_blank'>Resume</a></li>
         </ol>
       </div>
     </div>

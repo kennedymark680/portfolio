@@ -177,8 +177,9 @@ html {
   border-radius: 5px;
 }
 
-.project-text-section a {
+a {
   text-decoration: none;
+  color: white;
 }
 
 .video {
