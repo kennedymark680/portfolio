@@ -5,8 +5,15 @@ const Right = () => {
   return (
     <div>
       <div orientation="left" className="side-right">
-        <div className="email">kennedymark680@gmail.com</div>
         <ul className="link-list">
+          <li>
+            {/* <div className="email">kennedymark680@gmail.com</div> */}
+            <div className="email">
+              <a href="mailto:kennedymark680@gmail.com">
+                kennedymark680@gmail.com
+              </a>
+            </div>
+          </li>
           <li>
             <a href="https://github.com/kennedymark680" target="_blank">
               <img src={GitHub} alt="github logo" />
