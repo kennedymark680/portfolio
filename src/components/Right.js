@@ -7,7 +7,6 @@ const Right = () => {
       <div orientation="left" className="side-right">
         <ul className="link-list">
           <li>
-            {/* <div className="email">kennedymark680@gmail.com</div> */}
             <div className="email">
               <a href="mailto:kennedymark680@gmail.com">
                 kennedymark680@gmail.com
