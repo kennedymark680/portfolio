@@ -178,6 +178,10 @@ html {
   border-radius: 5px;
 }
 
+.project-text-section a {
+  color: #112240;
+}
+
 a {
   text-decoration: none;
   color: white;
