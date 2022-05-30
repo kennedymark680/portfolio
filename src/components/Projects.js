@@ -1,4 +1,4 @@
-import GonnerVideo from '../resources/Screen Recording 2022-05-18 at 4.45.07 PM.mov'
+import GonnerVideo from '../resources/Screen Recording 2022-05-18 at 4.45.07 PM.mp4'
 import PennStar4 from '../resources/Screen Recording 2022-05-18 at 4.55.01 PM.mov'
 import SpacePilgrims from '../resources/Screen Recording 2022-05-18 at 5.05.29 PM.mov'
 import Project from './Project'
