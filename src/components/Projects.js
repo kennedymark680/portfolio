@@ -9,7 +9,7 @@ const Projects = () => {
     title: 'Gonner',
     description:
       'A responsive, interactive, full CRUD, full stack PERN game played with friends simultaneously.',
-    video: GonnerVideo,
+    video: 'https://i.imgur.com/Qin6gF2.mp4',
     tech: ['React', 'PostgreSQL', 'NodeJS', 'ExpressJS'],
     links: [
       'https://gonner.herokuapp.com/',
