@@ -1,47 +1,8 @@
-import GonnerVideo from '../resources/Screen Recording 2022-05-18 at 4.45.07 PM.mp4'
-import PennStar4 from '../resources/Screen Recording 2022-05-18 at 4.55.01 PM.mov'
-import SpacePilgrims from '../resources/Screen Recording 2022-05-18 at 5.05.29 PM.mov'
 import Project from './Project'
 import { useState } from 'react'
+import { projects } from '../resources/ProjectData'
 
 const Projects = () => {
-  const gonner = {
-    title: 'Gonner',
-    description:
-      'A responsive, interactive, full CRUD, full stack PERN game played with friends simultaneously.',
-    video: 'https://i.imgur.com/Qin6gF2.mp4',
-    tech: ['React', 'PostgreSQL', 'NodeJS', 'ExpressJS'],
-    links: [
-      'https://gonner.herokuapp.com/',
-      'https://github.com/kennedymark680/gonner',
-      'https://github.com/kennedymark680/gonner_backend'
-    ]
-  }
-
-  const spacePilgrims = {
-    title: 'Space Pilgrims',
-    description:
-      'A responsive, interactive, full CRUD, full stack PERN game played with friends simultaneously.',
-    video: SpacePilgrims,
-    tech: ['React', 'PostgreSQL', 'NodeJS', 'ExpressJS'],
-    links: [
-      'https://space-pilgrims-frontend.herokuapp.com/',
-      'https://github.com/kuntzd99/Space-Pilgrims-Frontend',
-      'https://github.com/kuntzd99/Space-Pilgrims-Backend'
-    ]
-  }
-  const pennStar4 = {
-    title: 'PennStar4',
-    description:
-      'A responsive, interactive, full CRUD, full stack PERN game played with friends simultaneously.',
-    video: PennStar4,
-    tech: ['JavaScript', 'CSS', 'HTML', 'Custom Art'],
-    links: [
-      'https://pennstar4.surge.sh/',
-      'https://github.com/kennedymark680/pennStar4'
-    ]
-  }
-
   const [gonnerBtn, toggleGonnerBtn] = useState(true)
   const [spacePilgrimsBtn, toggleSpacePilgrims] = useState(false)
   const [pennStar4Btn, togglePennStar4Btn] = useState(false)
@@ -72,9 +33,9 @@ const Projects = () => {
           PennStar4
         </button>
       </div>
-      {gonnerBtn ? <Project project={gonner} /> : null}
-      {spacePilgrimsBtn ? <Project project={spacePilgrims} /> : null}
-      {pennStar4Btn ? <Project project={pennStar4} /> : null}
+      {gonnerBtn ? <Project project={projects[0]} /> : null}
+      {spacePilgrimsBtn ? <Project project={projects[1]} /> : null}
+      {pennStar4Btn ? <Project project={projects[2]} /> : null}
     </div>
   )
 }
